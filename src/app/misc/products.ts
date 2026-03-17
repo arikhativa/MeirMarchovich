@@ -89,6 +89,172 @@ export const allFerrous: Product[] = [
     },
 ]
 
+export const allMiscellaneous: Product[] = [
+    {
+        name: 'Al-starter',
+        type: ProductType.Miscellaneous,
+        img: '',
+    },
+    {
+        name: 'Alternator',
+        type: ProductType.Miscellaneous,
+        img: '',
+    },
+    {
+        name: 'Aluco-bond',
+        type: ProductType.Miscellaneous,
+        img: '',
+    },
+    {
+        name: 'Armatures',
+        type: ProductType.Miscellaneous,
+        img: '',
+    },
+    {
+        name: 'Dc-motors',
+        type: ProductType.Miscellaneous,
+        img: '',
+    },
+    {
+        name: 'Electric-meter',
+        type: ProductType.Miscellaneous,
+        img: '',
+    },
+    {
+        name: 'Mixed-electric-motors',
+        type: ProductType.Miscellaneous,
+        img: '',
+    },
+    {
+        name: 'Rotor & Stator',
+        type: ProductType.Miscellaneous,
+        format: 'jpeg',
+        img: '',
+    },
+    {
+        name: 'Transformer1',
+        type: ProductType.Miscellaneous,
+        img: '',
+    },
+]
+
+export const allNonFerrous: Product[] = [
+    {
+        name: 'Aluminium cables',
+        type: ProductType.NonFerrous,
+        format: 'jpeg',
+        img: '',
+    },
+    {
+        name: 'aluminium dross',
+        type: ProductType.NonFerrous,
+        format: 'jpeg',
+        img: '',
+    },
+    {
+        name: 'aluminiuom profile 1',
+        format: 'jpeg',
+        type: ProductType.NonFerrous,
+        img: '',
+    },
+    {
+        name: 'Aluminum packs',
+        format: 'jpeg',
+        type: ProductType.NonFerrous,
+        img: '',
+    },
+    {
+        name: 'aluminum profile',
+        format: 'jpeg',
+        type: ProductType.NonFerrous,
+        img: '',
+    },
+    {
+        name: 'Brass punching',
+        format: 'jpeg',
+        type: ProductType.NonFerrous,
+        img: '',
+    },
+    {
+        name: 'brass turnings',
+        type: ProductType.NonFerrous,
+        format: 'jpeg',
+        img: '',
+    },
+    {
+        name: 'Cables 1',
+        format: 'jpeg',
+        type: ProductType.NonFerrous,
+        img: '',
+    },
+    {
+        name: 'cables',
+        type: ProductType.NonFerrous,
+        format: 'jpeg',
+        img: '',
+    },
+    {
+        name: 'Densalloy 1',
+        type: ProductType.NonFerrous,
+        format: 'jpeg',
+        img: '',
+    },
+    {
+        name: 'Densalloy',
+        format: 'jpeg',
+        type: ProductType.NonFerrous,
+        img: '',
+    },
+    {
+        name: 'Drills',
+        type: ProductType.NonFerrous,
+        format: 'jpeg',
+        img: '',
+    },
+    {
+        name: 'hair wire',
+        format: 'jpeg',
+        type: ProductType.NonFerrous,
+        img: '',
+    },
+    {
+        name: 'Inserts',
+        type: ProductType.NonFerrous,
+        format: 'jpeg',
+        img: '',
+    },
+    {
+        name: 'Litho sheets',
+        format: 'jpeg',
+        type: ProductType.NonFerrous,
+        img: '',
+    },
+    {
+        name: 'Titanium',
+        type: ProductType.NonFerrous,
+        img: '',
+        format: 'jpeg',
+    },
+    {
+        name: 'titanum tarnings',
+        type: ProductType.NonFerrous,
+        format: 'jpeg',
+        img: '',
+    },
+    {
+        name: 'UBC',
+        type: ProductType.NonFerrous,
+        format: 'jpeg',
+        img: '',
+    },
+    {
+        name: 'Water Meter',
+        format: 'jpeg',
+        type: ProductType.NonFerrous,
+        img: '',
+    },
+]
+// TODO: not being used for now
 export const allProducts: Product[] = [
     // Ferrous
     {
