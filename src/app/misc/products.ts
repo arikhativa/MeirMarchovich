@@ -17,8 +17,77 @@ export interface Product {
     img: string
     name: string
     type: ProductType
+    format?: 'jpeg' | 'jpg'
     subtype?: ProductSubType
 }
+
+export const allFerrous: Product[] = [
+    {
+        name: 'Fabrication',
+        type: ProductType.Ferrous,
+        img: '',
+    },
+    {
+        name: 'Have melting steel rail-scrap',
+        type: ProductType.Ferrous,
+        img: '',
+    },
+    {
+        name: 'Heavy melting steel chines',
+        type: ProductType.Ferrous,
+        format: 'jpeg',
+        img: '',
+    },
+    {
+        name: 'Heavy melting steel disc',
+        type: ProductType.Ferrous,
+        img: '',
+    },
+    {
+        name: 'Machine parts',
+        type: ProductType.Ferrous,
+        format: 'jpeg',
+        img: '',
+    },
+    {
+        name: 'Pipe 1',
+        type: ProductType.Ferrous,
+        format: 'jpeg',
+        img: '',
+    },
+    {
+        name: 'Pipe 2',
+        type: ProductType.Ferrous,
+        format: 'jpeg',
+        img: '',
+    },
+    {
+        name: 'Pipe scrap',
+        type: ProductType.Ferrous,
+        img: '',
+    },
+    {
+        name: 'Pns',
+        type: ProductType.Ferrous,
+        img: '',
+    },
+    {
+        name: 'Rail scrap',
+        type: ProductType.Ferrous,
+        img: '',
+    },
+    {
+        name: 'Shredded steel scrap',
+        type: ProductType.Ferrous,
+        img: '',
+    },
+    {
+        name: 'Turnings',
+        type: ProductType.Ferrous,
+        format: 'jpeg',
+        img: '',
+    },
+]
 
 export const allProducts: Product[] = [
     // Ferrous
