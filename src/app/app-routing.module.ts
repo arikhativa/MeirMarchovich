@@ -5,6 +5,7 @@ import { ROUTER_PATHS } from './misc/types'
 import { ProductsComponent } from './products/products.component'
 import { AboutComponent } from './about/about.component'
 import { LicensesComponent } from './licenses/licenses.component'
+import { ContactComponent } from './contact/contact.component'
 
 const routes: Routes = [
     {
@@ -21,7 +22,7 @@ const routes: Routes = [
     },
     {
         path: ROUTER_PATHS.CONTACT.replace(/^\//, ''),
-        component: IntroComponent,
+        component: ContactComponent,
     },
     {
         path: ROUTER_PATHS.LICENSES.replace(/^\//, ''),

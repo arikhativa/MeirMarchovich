@@ -24,15 +24,17 @@ import { TagModule } from 'primeng/tag'
 import { ProductsService } from '../products.service'
 import { InputTextModule } from 'primeng/inputtext'
 import { FormsModule } from '@angular/forms'
-import { MultiSelectModule } from 'primeng/multiselect';
-import { GalleryImageComponent } from '../gallery-image/gallery-image.component';
-import { AboutComponent } from '../about/about.component';
-import { TextWithImageComponent } from '../text-with-image/text-with-image.component';
+import { MultiSelectModule } from 'primeng/multiselect'
+import { GalleryImageComponent } from '../gallery-image/gallery-image.component'
+import { AboutComponent } from '../about/about.component'
+import { TextWithImageComponent } from '../text-with-image/text-with-image.component'
 import { LicensesComponent } from '../licenses/licenses.component'
+import { ContactComponent } from '../contact/contact.component'
 @NgModule({
     declarations: [
         NavbarComponent,
         IntroComponent,
+        ContactComponent,
         LogoComponent,
         VidComponent,
         GalleryComponent,
@@ -64,6 +66,6 @@ import { LicensesComponent } from '../licenses/licenses.component'
         CommonModule,
         GalleriaModule,
     ],
-    exports: [IntroComponent, NavbarComponent],
+    exports: [IntroComponent, NavbarComponent, ContactComponent],
 })
 export class BodyModule {}
