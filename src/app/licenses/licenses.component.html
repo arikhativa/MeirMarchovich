@@ -1,1 +1,48 @@
-<p>licenses works!</p>
+<div class="licenses-container">
+    <header class="page-header">
+        <h1>Certifications & Regulatory Licenses</h1>
+    </header>
+
+    <div class="pdf-grid">
+        <div
+            *ngFor="let license of licenses"
+            class="pdf-card"
+        >
+            <div class="card-header">
+                <div class="header-text">
+                    <h3 class="title">{{ license.title }}</h3>
+                    <small class="subtitle">{{ license.subtitle }}</small>
+                </div>
+                <span class="pdf-icon">PDF</span>
+            </div>
+
+            <div class="pdf-viewer">
+                <object
+                    [data]="license.safeUrl"
+                    type="application/pdf"
+                >
+                    <div class="fallback-message">
+                        <p>Preview not available.</p>
+                        <a
+                            [href]="getRawPath(license.fileName)"
+                            target="_blank"
+                            class="view-button"
+                        >
+                            Open PDF
+                        </a>
+                    </div>
+                </object>
+            </div>
+
+            <div class="card-footer">
+                <a
+                    [href]="getRawPath(license.fileName)"
+                    download
+                    class="download-btn"
+                >
+                    Download Document
+                </a>
+            </div>
+        </div>
+    </div>
+</div>
