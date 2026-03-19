@@ -11,11 +11,40 @@
                         [options]="multiSelectTypes"
                         [(ngModel)]="selectedTypes"
                         (ngModelChange)="onSelectedTypesChange()"
-                        [filter]="true"
+                        [filter]="false"
                         optionLabel="name"
-                        showHeader
                         placeholder="Select Types"
-                    />
+                    >
+                        <ng-template
+                            let-value
+                            pTemplate="selectedItems"
+                        >
+                            <div class="flex align-items-center gap-2">
+                                <p-tag
+                                    *ngFor="let val of value"
+                                    [value]="val.name"
+                                    [severity]="getColorByType(val.name)"
+                                    class="mr-1"
+                                ></p-tag>
+
+                                <span *ngIf="!value || value.length === 0">
+                                    Select Types
+                                </span>
+                            </div>
+                        </ng-template>
+
+                        <ng-template
+                            let-option
+                            pTemplate="item"
+                        >
+                            <div class="flex align-items-center gap-2">
+                                <p-tag
+                                    [value]="option.name"
+                                    [severity]="getColorByType(option.name)"
+                                ></p-tag>
+                            </div>
+                        </ng-template>
+                    </p-multiSelect>
                 </div>
             </div>
         </ng-template>
