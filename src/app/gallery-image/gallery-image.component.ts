@@ -20,6 +20,9 @@ export class GalleryImageComponent {
     }
 
     get header() {
-        return `${this.product.type}, ${this.product.subtype}, ${this.product.name}`
+        if (this.product.subtype) {
+            return `${this.product.type}, ${this.product.subtype}, ${this.product.name}`
+        }
+        return `${this.product.type}, ${this.product.name}`
     }
 }
