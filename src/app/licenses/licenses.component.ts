@@ -16,16 +16,6 @@ interface LicensePdf {
 export class LicensesComponent {
     licenses: LicensePdf[] = [
         {
-            title: 'ISO 9001:2015',
-            subtitle: 'Quality Management System',
-            fileName: 'iso-9001.pdf',
-        },
-        {
-            title: 'ISO 14001:2015',
-            subtitle: 'Environmental Management System',
-            fileName: 'iso-14001.pdf',
-        },
-        {
             title: 'Business License - Metal',
             subtitle: 'Trading, Sorting & Storage',
             fileName: 'business-license2.pdf',
@@ -39,6 +29,16 @@ export class LicensesComponent {
             title: 'Business License - Processing',
             subtitle: 'Production & Metal Processing',
             fileName: 'business-license1.pdf',
+        },
+        {
+            title: 'ISO 9001:2015',
+            subtitle: 'Quality Management System',
+            fileName: 'iso-9001.pdf',
+        },
+        {
+            title: 'ISO 14001:2015',
+            subtitle: 'Environmental Management System',
+            fileName: 'iso-14001.pdf',
         },
     ]
 
