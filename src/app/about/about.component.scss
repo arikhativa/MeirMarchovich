@@ -4,3 +4,10 @@ div {
     margin-right: 15rem;
     margin-bottom: 8rem;
 }
+
+::ng-deep article:nth-of-type(2) {
+    .aaa {
+        background-color: rgba(0, 0, 0, 0.05);
+        border: 2px dashed #ccc;
+    }
+}

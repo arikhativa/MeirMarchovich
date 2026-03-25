@@ -11,13 +11,13 @@ import { PagesNames, ROUTER_PATHS } from '../misc/types'
 export class AboutComponent {
     readonly list: TextWithImageProp[] = [
         {
-            image: 'assets/images/about/1.png',
+            image: 'assets/images/about/0.jpeg',
             title: aboutUs.sectionA.title,
             body: aboutUs.sectionA.body,
             textLocation: 'left',
         },
         {
-            image: 'assets/images/about/2.png',
+            image: 'assets/images/about/1.jpeg',
             title: aboutUs.products.title,
             body: aboutUs.products.body,
             link: {
@@ -27,13 +27,13 @@ export class AboutComponent {
             textLocation: 'right',
         },
         {
-            image: 'assets/images/about/3.png',
+            image: 'assets/images/about/2.jpeg',
             title: aboutUs.order.title,
             body: aboutUs.order.body,
             textLocation: 'left',
         },
         {
-            image: 'assets/images/about/4.png',
+            image: 'assets/images/about/3.jpeg',
             title: aboutUs.moreInformation.title,
             body: aboutUs.moreInformation.body,
             link: {
