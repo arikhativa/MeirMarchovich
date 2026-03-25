@@ -27,7 +27,7 @@ export class ContactComponent implements OnInit {
 
     // Raw URL for the map
     private readonly rawMapUrl =
-        'https://www.google.com/maps?q=32.8992071,35.0870633&z=17&hl=en'
+        'https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d3349.9607091337125!2d35.0844883756678!3d32.899207073612786!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zMzLCsDUzJzU3LjIiTiAzNcKwMDUnMTMuNCJF!5e0!3m2!1sen!2sil!4v1774444701802!5m2!1sen!2sil'
 
     // This will hold the sanitized version
     public safeMapUrl!: SafeResourceUrl
