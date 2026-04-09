@@ -10,28 +10,28 @@ import {
     providedIn: 'root',
 })
 export class ProductsService {
-    private _allFerrous: Product[] = allFerrous
-    private _allMiscellaneous: Product[] = allMiscellaneous
-    private _allNonFerrous: Product[] = allNonFerrous
+    public allFerrous: Product[] = allFerrous
+    public allMiscellaneous: Product[] = allMiscellaneous
+    public allNonFerrous: Product[] = allNonFerrous
 
     constructor() {
-        this._allFerrous.forEach((product, index) => {
+        this.allFerrous.forEach((product, index) => {
             product.img = `assets/images/gallery/ferrous/${index}.${product.format || 'jpg'}`
         })
 
-        this._allMiscellaneous.forEach((product, index) => {
+        this.allMiscellaneous.forEach((product, index) => {
             product.img = `assets/images/gallery/miscellaneous/${index}.${product.format || 'jpg'}`
         })
-        this._allNonFerrous.forEach((product, index) => {
+        this.allNonFerrous.forEach((product, index) => {
             product.img = `assets/images/gallery/non-ferrous/${index}.${product.format || 'jpg'}`
         })
     }
 
     get allProducts() {
         return [
-            ...this._allFerrous,
-            ...this._allMiscellaneous,
-            ...this._allNonFerrous,
+            ...this.allFerrous,
+            ...this.allMiscellaneous,
+            ...this.allNonFerrous,
         ]
     }
 }

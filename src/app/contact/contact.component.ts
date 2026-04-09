@@ -10,7 +10,8 @@ interface ContactInfo {
 interface ContactCard {
     title: string
     subtitle: string
-    icon: string
+    icon?: string
+    image?: string
     highlight: boolean
     details: ContactInfo[]
 }
@@ -54,7 +55,7 @@ export class ContactComponent implements OnInit {
         {
             title: 'Owner and CEO',
             subtitle: 'Meir Marcovich',
-            icon: '👤',
+            image: 'assets/images/mair.jpg',
             highlight: true,
             details: [
                 {

@@ -18,21 +18,23 @@ export class GalleryComponent {
     constructor(private productsService: ProductsService) {}
 
     ngOnInit() {
-        this.products = this.productsService.allProducts
         for (let i = 0; i < 2; i++) {
-            this.multiProduct2.push(this.products[i])
+            this.multiProduct2.push(this.productsService.allFerrous[i])
         }
-        for (let i = 2; i < 6; i++) {
-            this.multiProduct4.push(this.products[i])
+        for (let i = 0; i < 4; i++) {
+            this.multiProduct4.push(this.productsService.allMiscellaneous[i])
         }
-        for (let i = 6; i < 9; i++) {
-            this.multiProduct3.push(this.products[i])
+        for (let i = 5; i < 6; i++) {
+            this.singleProduct.push(this.productsService.allMiscellaneous[i])
         }
-        for (let i = 9; i < 11; i++) {
-            this.multiProduct2b.push(this.products[i])
+        for (let i = 0; i < 3; i++) {
+            this.multiProduct3.push(this.productsService.allNonFerrous[i])
         }
-        for (let i = 11; i < 13; i++) {
-            this.singleProduct.push(this.products[i])
+        for (let i = 2; i < 4; i++) {
+            this.multiProduct2b.push(this.productsService.allFerrous[i])
+        }
+        for (let i = 3; i < 4; i++) {
+            this.singleProduct.push(this.productsService.allNonFerrous[i])
         }
     }
 }

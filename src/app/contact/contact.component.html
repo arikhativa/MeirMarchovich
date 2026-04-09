@@ -3,19 +3,30 @@
         <h1>{{ pageTitle }}</h1>
         <p>{{ pageSubtitle }}</p>
     </header>
-
     <div class="contact-grid">
         <div
             *ngFor="let card of contactCards"
             class="contact-card"
             [class.highlight]="card.highlight"
         >
-            <div class="card-icon">{{ card.icon }}</div>
+            <div
+                *ngIf="card.icon"
+                class="card-icon"
+            >
+                {{ card.icon }}
+            </div>
+            <div
+                *ngIf="card.image && !card.icon"
+                class="card-image"
+            >
+                <img
+                    [src]="card.image"
+                    alt=""
+                />
+            </div>
             <h2>{{ card.title }}</h2>
             <p class="subtitle">{{ card.subtitle }}</p>
-
             <hr />
-
             <div
                 *ngFor="let item of card.details"
                 class="info-row"
@@ -25,7 +36,6 @@
             </div>
         </div>
     </div>
-
     <div class="map-section">
         <div class="map-wrapper">
             <iframe

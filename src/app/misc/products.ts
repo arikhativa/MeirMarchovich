@@ -194,12 +194,6 @@ export const allNonFerrous: Product[] = [
         img: '',
     },
     {
-        name: 'Densalloy 1',
-        type: ProductType.NonFerrous,
-        format: 'jpeg',
-        img: '',
-    },
-    {
         name: 'Densalloy',
         format: 'jpeg',
         type: ProductType.NonFerrous,
