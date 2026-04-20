@@ -4,7 +4,7 @@
     "scripts": {
         "ng": "ng",
         "start": "ng serve",
-        "build": "ng build",
+        "build": "ng build && purgecss -c postcss.config.js && node purge-js.js",
         "watch": "ng build --watch --configuration development",
         "stage": "ng deploy --no-silent --repo=https://github.com/arikhativa/arikhativa.github.io --branch=main",
         "test": "ng test"
