@@ -9,6 +9,7 @@ import { GalleryComponent } from '../gallery/gallery.component'
 import { GalleriaModule } from 'primeng/galleria'
 import { ButtonModule } from 'primeng/button'
 import { CardModule } from 'primeng/card'
+import { FormsModule } from '@angular/forms'
 import { MultiImageComponent } from '../multi-image/multi-image.component'
 import { MultiImage4Component } from '../multi-image-4/multi-image-4.component'
 import { MultiImage2Component } from '../multi-image-2/multi-image-2.component'
@@ -52,6 +53,7 @@ import { ContactComponent } from '../contact/contact.component'
     providers: [ProductsService],
     imports: [
         MultiSelectModule,
+        FormsModule,
         TagModule,
         InputTextModule,
         ImageModule,
