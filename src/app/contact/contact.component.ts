@@ -35,7 +35,7 @@ export class ContactComponent implements OnInit {
 
     public readonly contactCards: ContactCard[] = [
         {
-            title: 'Main Sales Office',
+            title: 'Sales Office',
             subtitle: '2 Haresh Street, Akko, Israel',
             icon: '🏢',
             highlight: false,
