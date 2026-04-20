@@ -20,8 +20,10 @@
                 class="card-image"
             >
                 <img
-                    [src]="card.image"
+                    [ngSrc]="card.image"
                     alt=""
+                    width="300"
+                    height="100"
                 />
             </div>
             <h2>{{ card.title }}</h2>
