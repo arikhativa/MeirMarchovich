@@ -3,7 +3,7 @@ const path = require('path')
 const UglifyJS = require('uglify-js')
 
 // Directory containing your built JS files
-const buildDir = 'dist/MeirMarchovich/browser'
+const buildDir = 'dist/MeirMarcovich/browser'
 
 // Function to purge JS
 function purgeJavaScript() {
